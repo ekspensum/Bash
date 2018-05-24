@@ -1,0 +1,11 @@
+#!/bin/bash
+cyfry=$1
+suma=0
+i=0
+while [ $i -lt ${#cyfry} ]
+do
+suma=$[$suma+${cyfry[*]:$i:1}]
+i=$[i+1]
+done
+echo "Ilość cyfr do sumowania: ${#cyfry}"
+echo "Suma cyfr: $suma"

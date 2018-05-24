@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ $# -lt 2 ]; then
+echo "Brak jednego lub obu argumentów";
+fi
+echo "Wynik dodawania: $[$1+$2]"

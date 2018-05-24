@@ -1,0 +1,10 @@
+#!/bin/bash
+cyfry=$1
+suma=0
+i=${#cyfry}
+while [ $i -ge 0 ]
+do
+echo -n ${cyfry[*]:$i:1}
+i=$[i-1]
+done
+echo

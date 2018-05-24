@@ -1,0 +1,8 @@
+#!/bin/bash
+znak=$2
+case "$znak" in
+"+") echo "Wynik dodawania: $[$1+$3]" ;;
+"-") echo "Wynik odejmowania: $[$1-$3]" ;;
+"x") echo "Wynik mnożenia: $[$1*$3]" ;;
+"/") echo -n "Wynik dzielenia: " ; echo $* | awk '{print $1/$3}' ;;
+esac

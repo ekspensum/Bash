@@ -1,0 +1,8 @@
+#!/bin/bash
+znak=$2
+case "$znak" in
+"+") echo -n "Wynik dodawania: " ; echo $1+$3 | bc -l ;; 
+"-") echo -n "Wynik odejmowania: " ; echo $1-$3 | bc -l ;;
+"x") echo -n "Wynik mnożenia: " ; echo $1*$3 | bc -l ;;
+"/") echo -n "Wynik dzielenia: " ; echo $1/$3 | bc -l ;;
+esac
