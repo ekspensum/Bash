@@ -1,0 +1,10 @@
+#!/bin/bash
+while [ : ]
+do
+clear
+echo ""
+date +%F
+sleep 0.8
+clear
+sleep 0.8
+done

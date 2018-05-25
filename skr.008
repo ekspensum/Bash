@@ -1,0 +1,8 @@
+#!/bin/bash
+i=0
+tab=($*)
+while [ $i -lt $# ]
+do
+find ~/ -name ${tab[$i]} -type f -exec ls -l '{}' \;
+i=$[i+1]
+done

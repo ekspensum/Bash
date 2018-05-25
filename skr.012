@@ -1,0 +1,127 @@
+#!/bin/bash
+znak=$1
+case "$znak" in
+1)
+for (( i=1; i<=5; i++ ))
+do
+	for (( j=1; j<=i;  j++ ))
+	do
+	echo -n $i
+	done
+echo
+done
+;;
+2)
+for (( i=1; i<=5; i++ ))
+do
+        for (( j=1; j<=i;  j++ ))
+        do
+        echo -n $j
+        done
+echo 
+done
+;;
+3)
+for (( i=1; i<=5; i++ ))
+do
+        for (( j=1; j<=i;  j++ ))
+        do
+        echo -n " |"
+        done
+echo "_"
+done
+;;
+4)
+for (( i=1; i<=5; i++ ))
+do
+        for (( j=1; j<=i;  j++ ))
+        do
+        echo -n " *"
+        done
+echo 
+done
+;;
+5)
+for (( i=1; i<=5; i++ ))
+do
+        for (( j=1; j<=i;  j++ ))
+        do
+        echo -n " *"
+        done
+echo 
+done
+for (( i=5; i>=1; i-- ))
+do
+        for (( j=1; j<=i;  j++ ))
+        do
+        echo -n " *"
+        done
+echo 
+done
+;;
+6)
+echo "RYSUNEK NIECZYTELNY"
+;;
+7)
+a=17
+for (( i=1; i<=9; i++ ))
+do
+        for (( j=1; j<=9;  j++ ))
+        do
+		if (( $j > $[a/2] )) && (( $j <= $[17-a/2] ))
+		then
+        		echo -n $i;
+		fi
+	echo -n " "
+        done
+echo 
+a=$[a-2]
+done
+;;
+8)
+a=17
+for (( i=1; i<=9; i++ ))
+do
+        for (( j=1; j<=9;  j++ ))
+        do
+                if (( $j > $[a/2] )) && (( $j <= $[17-a/2] ))
+                then 
+                        echo -n "*";
+                fi
+        echo -n " "
+        done
+echo 
+a=$[a-2]
+done
+;;
+9)
+a=17
+for (( i=1; i<=9; i++ ))
+do
+        for (( j=1; j<=9;  j++ ))
+        do
+                if (( $j > $[a/2] )) && (( $j <= $[17-a/2] ))
+                then 
+                        echo -n "*";
+                fi
+        echo -n " "
+        done
+echo 
+a=$[a-2]
+done
+a=1
+for (( i=9; i>=1; i-- ))
+do
+        for (( j=1; j<=9;  j++ ))
+        do
+                if (( $j > $[a/2] )) && (( $j <= $[17-a/2] ))
+                then 
+                        echo -n "*";
+                fi
+        echo -n " "
+        done
+echo 
+a=$[a+2]
+done
+;;
+esac

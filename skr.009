@@ -1,0 +1,2 @@
+#!/bin/bash
+cat $1 | awk '{if(NR>='$2' && NR<='$3') print $0}'
